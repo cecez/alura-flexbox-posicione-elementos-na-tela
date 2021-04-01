@@ -12,6 +12,19 @@
     display: flex;
 }
 
+.rodapePrincipal-navMap-list {
+    display: flex;
+
+    /* altera orientação/direção do flex (por padrão fica uma do lado da outra/originalmente na horizontal=row, um embaixo do outro=column) */
+    /*flex-direction: column;*/
+    /* se não couber no pai (height), começa novamente renderização / quebra para próxima coluna (flex-direction) */
+    /*flex-wrap: wrap;*/
+
+    flex-flow: column wrap; /* equivalente a chamar flex-direction e flex-wrap */
+
+    height: 250px;
+}
+
 .rodapePrincipal-patrocinadores .container {
     display: flex;
     justify-content: space-between;
