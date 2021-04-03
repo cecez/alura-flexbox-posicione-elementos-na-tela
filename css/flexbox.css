@@ -1,3 +1,20 @@
+/*
+
+--- propriedade "justify-content" ---
+
+Sabemos que a propriedade justify-content: space-between faz com que o espaço que sobrou no nosso elemento pai seja distribuído entre os filhos, porém é claro que esse não é o único valor da propriedade justify-content. Por exemplo, de que outras formas podemos distribuir esse espaço?
+
+Colocar espaço sobrando à esquerda, jogando o conteúdo para direita com justify-content: flex-end.
+Colocar espaço sobrando à direita, jogando o conteúdo para esquerda com justify-content: flex-start (que é o padrão).
+Colocar espaço sobrando à esquerda e à direita, jogando o conteúdo para o meio com justify-content: center.
+Colocar espaço sobrando entre os elementos como vimos antes usando justify-content: space-between.
+E uma possibilidade bem interessante também é colocar o espaço em volta dos elementos. Podemos usar o justify-content: space-around para isso.
+
+
+ */
+
+/* ----- CABEÇALHO */
+
 .cabecalhoPrincipal .container {
     display: flex;
 
@@ -12,12 +29,36 @@
     display: flex;
 }
 
+/* -------- CENTRO */
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin-bottom: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+
+
+
+/* -------- RODAPÉ */
 .rodapePrincipal-navMap-list {
     display: flex;
 
     /* altera orientação/direção do flex (por padrão fica uma do lado da outra/originalmente na horizontal=row, um embaixo do outro=column) */
     /*flex-direction: column;*/
-    /* se não couber no pai (height), começa novamente renderização / quebra para próxima coluna (flex-direction) */
+    /* se não couber no pai (height), começa/transborda conteúdo novamente renderização | quebra para próxima coluna (flex-direction) */
     /*flex-wrap: wrap;*/
 
     flex-flow: column wrap; /* equivalente a chamar flex-direction e flex-wrap */
