@@ -94,3 +94,16 @@ E uma possibilidade bem interessante também é colocar o espaço em volta dos e
 .rodapePrincipal-contatoForm-submit {
     margin-left: 0;
 }
+
+
+/* ---- PARTE MOBILE */
+
+.cabecalhoPrincipal-nav {
+    flex-direction: column;
+}
+
+.cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+}
