@@ -1,5 +1,7 @@
 /*
 
+--- artigo recomendado sobre flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 --- propriedade "justify-content" ---
 
 Sabemos que a propriedade justify-content: space-between faz com que o espaço que sobrou no nosso elemento pai seja distribuído entre os filhos, porém é claro que esse não é o único valor da propriedade justify-content. Por exemplo, de que outras formas podemos distribuir esse espaço?
@@ -96,7 +98,7 @@ E uma possibilidade bem interessante também é colocar o espaço em volta dos e
 }
 
 
-/* ---- PARTE MOBILE */
+/* -------------------------------------------------- PARTE MOBILE */
 @media (max-width: 769px) {
 
     .cabecalhoPrincipal-nav {
@@ -107,6 +109,10 @@ E uma possibilidade bem interessante também é colocar o espaço em volta dos e
         flex-direction: column;
         align-items: initial;
         text-align: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
     }
 
     .conteudoPrincipal-cursos {
