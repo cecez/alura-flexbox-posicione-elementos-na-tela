@@ -12,6 +12,8 @@ Colocar espaço sobrando à esquerda e à direita, jogando o conteúdo para o me
 Colocar espaço sobrando entre os elementos como vimos antes usando justify-content: space-between.
 E uma possibilidade bem interessante também é colocar o espaço em volta dos elementos. Podemos usar o justify-content: space-around para isso.
 
+-- propriedade do flex-item: "flex-grow"
+"Proporção" para que item aumente seu espaço, utilizando o que sobrou no contêiner flexível.
 
  */
 
@@ -51,7 +53,24 @@ E uma possibilidade bem interessante também é colocar o espaço em volta dos e
     margin-left: 0;
 }
 
+.videoSobre .container {
+    display: flex;
+}
 
+.videoSobre-video {
+    flex-grow: 1;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 3;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
 
 
 /* -------- RODAPÉ */
