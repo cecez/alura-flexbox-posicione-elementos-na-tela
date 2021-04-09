@@ -59,13 +59,14 @@ E uma possibilidade bem interessante também é colocar o espaço em volta dos e
 
 .videoSobre-video {
     flex-grow: 1;
+    flex-shrink: 2;
 }
 
 .videoSobre-sobre {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .videoSobre-sobre-list {
@@ -141,6 +142,14 @@ E uma possibilidade bem interessante também é colocar o espaço em volta dos e
 
     .conteudoPrincipal-cursos-link {
         width: 100%;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
     }
 
     .rodapePrincipal-navMap-list {
